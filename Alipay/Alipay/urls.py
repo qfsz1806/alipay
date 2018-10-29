@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from alipay_app.views import alipay
+from alipay_app.views import alipay, index
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^alipay/$', alipay),
+    url('^hello/$', index)
 ]

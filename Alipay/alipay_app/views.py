@@ -28,3 +28,7 @@ def alipay(request):
     url = 'https://openapi.alipaydev.com/gateway.do?' + order_string
 
     return redirect(url)
+
+
+def index(request):
+    return 'Hello Git'
